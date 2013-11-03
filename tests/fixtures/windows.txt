@@ -1,0 +1,19 @@
+this is a file
+with Windows line endings
+also have   tabs    of 4    spaces
+two newslines in a row
+
+
+and then a new line following by a space
+ 
+    
+        
+                  
+                  and a word
+now a series of letter
+a
+ab
+abc
+abcd
+abcdefg
+abcdefghijkm, and ending without any newlne character.

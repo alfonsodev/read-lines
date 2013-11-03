@@ -1,0 +1,20 @@
+this is a file
+with Windows line endings
+also have   tabs    of 4    spaces
+two newslines in a row
+
+
+and then a new line following by a space
+ 
+    
+        
+                  
+                  and a word
+now a series of letter
+a
+ab
+abc
+abcd
+abcdefg
+abcdefghijkm, and ending without any newlne character.
+>let's finish with a super long line that will exced the size of the buffer, by default the buffer is set to 200, don't ask me why, it should be much bilet's finish with a super long line that will exced the size of the buffer, by default the buffer is set to 200, don't ask me why, it should be much bilet's finish with a super long line that will exced the size of the buffer, by default the buffer is set to 200, don't ask me why, it should be much bilet's finish with a super long line that will exced the size of the buffer, by default the buffer is set to 200, don't ask me why, it should be much bi.

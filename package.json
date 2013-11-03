@@ -1,0 +1,38 @@
+{
+  "name": "readline",
+  "version": "0.0.0",
+  "description": "A module that allows read big files line by line, it provides a next callback to get the next line. Uses ramdom access instead of streams as the majority of line by line modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/alfonsodev/readline"
+  },
+  "dependencies": {
+      "debug": "*"
+  },
+  "devDependencies": {
+  },
+  "keywords": [
+    "line",
+    "read",
+    "big",
+    "file",
+    "backwards",
+    "random",
+    "access",
+    "line",
+    "reader",
+    "line",
+    "by",
+    "line",
+    "read",
+    "lines",
+    "read",
+    "file"
+  ],
+  "author": "alfonsodev",
+  "license": "BSD"
+}
