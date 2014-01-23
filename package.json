@@ -1,6 +1,6 @@
 {
   "name": "read-lines",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Line by line big file async reader ",
   "main": "index.js",
   "scripts": {

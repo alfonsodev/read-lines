@@ -1,6 +1,5 @@
 var assert = require('assert');
 var read = require(__dirname + '/../');
-var debug = require('debug')('testRead');
 
 describe('ReadFileLines', function() {
 
@@ -18,7 +17,6 @@ describe('ReadFileLines', function() {
       var expectedLine = lines.shift();
       if (numLines < 19) {
         assert.equal(line, expectedLine);
-        debug(line);
         numLines++;
       }
       next();
@@ -36,12 +34,10 @@ describe('ReadFileLines', function() {
     var file = new read(__dirname + '/fixtures/Unix.txt');
     var checks = 0;
     file.removeAllListeners();
-    debugger;
     file.on('open', function() {
       checks++;
     });
     file.on('line', function(line) {
-      debugger;
       checks++;
       file.close(function(err) {
         if (err) {
@@ -60,30 +56,3 @@ describe('ReadFileLines', function() {
     });
   });
 });
-/*
-it.skip('Should if line is the same size than the buffer', function(done) {
-  var file = new read(__dirname + '/fixtures/sameLineSizeThanBuffer.txt');
-  var lines = ['1ffer is set to 200, don\'t ask me why, it should b',
-    '2ffer is set to 200, don\'t ask me why, it should b',
-    '3ffer is set to 200, don\'t ask me why, it should b',
-    '4ffer is set to 200, don\'t ask me why, it should b',
-    '5ffer is set to 200, don\'t ask me why, it should b'
-  ];
-  var originalNumberOfLines = lines.length;
-  var countedNumberOfLines = 0;
-
-  file.on('line', function(line, next) {
-    debug('got: ' + line);
-    var expectedLine = lines.shift();
-    debug('exp: ' + expectedLine);
-    assert.equal(line, expectedLine);
-    countedNumberOfLines++;
-    next();
-  });
-
-  file.on('end', function() {
-    assert.equal(originalNumberOfLines, countedNumberOfLines);
-    done();
-  });
-});
-*/
