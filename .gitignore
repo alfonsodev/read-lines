@@ -1,1 +1,8 @@
 node_modules
+lcov.info
+lib-cov/
+lcov-report/
+html-report/
+.DS_Store
+
+

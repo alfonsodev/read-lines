@@ -1,38 +1,36 @@
 {
-  "name": "readline",
-  "version": "0.0.0",
-  "description": "A module that allows read big files line by line, it provides a next callback to get the next line. Uses ramdom access instead of streams as the majority of line by line modules",
+  "name": "read-lines",
+  "version": "0.1.0",
+  "description": "Line by line big file async reader ",
   "main": "index.js",
   "scripts": {
     "test": "npm test"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/alfonsodev/readline"
+    "url": "http://github.com/alfonsodev/read-lines"
   },
   "dependencies": {
-      "debug": "*"
   },
   "devDependencies": {
+    "mocha": "~1.17.0",
+    "mocha-istanbul": "~0.2.0",
+    "coveralls": "~2.6.1",
+    "istanbul": "~0.2.4"
   },
   "keywords": [
     "line",
     "read",
     "big",
     "file",
-    "backwards",
-    "random",
-    "access",
-    "line",
+		"line",
     "reader",
     "line",
     "by",
     "line",
     "read",
-    "lines",
-    "read",
-    "file"
-  ],
+    "lines"
+	],
   "author": "alfonsodev",
   "license": "BSD"
 }
