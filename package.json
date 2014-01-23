@@ -4,7 +4,7 @@
   "description": "Line by line big file async reader ",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "make test && make test-coverage && make test-coveralls"
   },
   "repository": {
     "type": "git",
