@@ -14,7 +14,7 @@ and call ```next()``` when your are done.
     var ReadLines = require('read-lines');
     var file = new ReadLines('/path/to/my/file');
 
-    file.on('open', function(err) {
+    file.on('open', function() {
       //call read for start reading the first line
       file.read(); 
     });
