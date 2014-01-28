@@ -12,15 +12,20 @@ The module emits the first line and then stops until you call the
 and call ```next()``` when your are done.  
 
     var ReadLines = require('read-lines');
-    var read = new ReadLines('/path/to/my/file');
+    var file = new ReadLines('/path/to/my/file');
 
-    read.on('line', function(line, next) {
-      console.log(line);
-      setTimeout(function() {
-        next();
-      },1000);
+    file.on('open', function(err) {
+      //call read for start reading the first line
+      file.read(); 
     });
-    read.on('error', function(err) {
+    
+    file.on('line', function(line, next) {
+      console.log(line);
+      //You call next to get the next line
+      next();
+    });
+
+    file.on('error', function(err) {
       // handle here the errors
     });
 

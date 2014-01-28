@@ -10,6 +10,9 @@ describe('ReadFileLines', function() {
     var lines = fs.readFileSync(__dirname + mockfile).toString().split('\n');
     var numLines = 0;
     var expectNumLines = lines.length;
+    file2.on('open', function(err) {
+      file2.read();
+    });
     file2.on('error', function(err) {
       console.log(err);
     });
@@ -35,6 +38,7 @@ describe('ReadFileLines', function() {
     var checks = 0;
     file.removeAllListeners();
     file.on('open', function() {
+      file.read();
       checks++;
     });
     file.on('line', function(line) {
