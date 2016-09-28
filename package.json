@@ -11,6 +11,7 @@
     "url": "http://github.com/alfonsodev/read-lines"
   },
   "dependencies": {
+    "iconv-lite": "^0.4.13"
   },
   "devDependencies": {
     "mocha": "~1.17.0",
